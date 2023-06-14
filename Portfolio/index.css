@@ -1,0 +1,406 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+
+.left-container{
+    width: 300px;
+    height: 1000px;
+    background-color: #000;
+    border: 2px solid black;
+    position: fixed;
+}
+
+#circle-img{
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 10px solid gray;
+    object-fit: fill;
+}
+
+.left-container p{
+    color:  whitesmoke;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    margin-left: 65px;
+    margin-top: 10px;
+
+}
+
+.social i{
+    color:  white;
+    padding-inline: 10px;
+    margin-left: 35px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid#212529;
+    background-color:#212529;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    list-style: none;
+   
+}
+.social i:hover{
+background-color:#149ddd;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+#itag:hover{
+    color:#149ddd;
+}   
+
+.content a:hover{
+    color: whitesmoke;
+}
+.content li{
+    list-style: none;
+}
+.content a{
+    text-decoration: none;
+    font-weight: normal;
+    color: gray;
+    line-height: 50px;
+    list-style: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;  
+     
+}
+
+#header{
+    display: flex;
+}
+
+.home{
+    width: 100%;
+    height: 710px;
+    background-image: url(./images/DSC_0193_1_Original.JPG);
+    background-attachment: fixed;
+    animation-name: introduce;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes introduce {
+    from{
+        width: left;
+    }
+    to{
+        width: right;
+    }
+
+}
+
+.introduce{
+    position: absolute;
+    top: 200px;
+    font-size: 30px;
+    font-style: italic;
+    color: #212529;
+    left: 500px;
+    line-height: 20px;
+}
+
+/*  About Section */
+
+.sec-about{
+    position: static;
+    margin-left: 300px;
+}
+
+.sec-about p{
+    font-weight: bolder;
+    margin-top: 50px;
+    color: #212529;
+    
+}
+
+.about-block{
+    margin-left: 30px;
+}
+
+.about{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: antiquewhite;
+    color: #212529;
+    position: static;
+}
+
+#para{
+    font-size: 20px;
+}
+
+.about img{
+    width: 300px;
+    height: 350px;
+}
+
+.info ul{
+    list-style: none;
+    font-size: 20px;
+    line-height: 50px;
+}
+.info i{
+    color: #149ddd;
+}
+
+.info-1 ul{
+    list-style: none;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.info-1{
+    background-color: antiquewhite;
+}
+
+.info-1 li{
+    line-height: 50px;
+}
+
+.info-1 i{
+    color: #149ddd;
+}
+
+.sec-about p{
+    font-size: 40px;
+}
+
+/* About section ends */
+
+/* Resume Section starts */
+
+.resume-block{
+    margin-left: 300px;
+    position: static;
+    
+}
+
+.resume{
+    margin-left: 30px;
+    font-weight: bolder;
+    margin-top: 50px;
+    color: #212529;
+    position: static;
+}
+
+.resume h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif   ;
+    color: #212529;
+}
+
+.resume p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif   ;
+}
+
+.resume button{
+    background-color:#212529;
+    width: 300px;
+    height: 50px;
+    margin-left: 300px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border: 2px solid #212529 ;
+    border-radius: 10px;
+}
+
+.resume a{
+    text-decoration: none;
+    color: white;
+}
+
+/* section resume Ends */
+
+/* section Projects Starts */
+
+.projects-block{
+    margin-left: 300px;
+    position: static;
+}
+
+.project-heading{
+    margin-left: 30px;
+    position: static;
+}
+
+.project-heading h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif   ;
+    color: #212529;
+}
+
+.project-heading p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif   ;
+}
+
+.row{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.row img{
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
+  
+}
+
+.row img:hover{
+    transform: scale(1.1);
+}
+
+.projects{
+    background-color: thistle;
+    height: 700px;
+    padding-top: 20px;
+}
+
+/* Section Project Ends */
+
+/* Section Contact Starts */
+
+.contact-block{
+    margin-left: 300px;
+    position: static;
+    margin-top: -30px;
+    background-color: hsl(201, 19%, 64%);
+}
+
+.contact-heading{
+    margin-left: 30px;
+    padding-top: 50px;
+}
+
+.contact-heading h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif   ;
+    color: #212529;
+}
+
+.contact-details{
+    display: block;
+    align-items: center;
+    margin-left: 350px;
+    line-height: 30px
+}
+
+.contact-details a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #123000;
+}
+
+.contact-details a:hover{
+     color: #149ddd;
+}
+
+.contact-social{
+    padding-top: 20px;
+    margin-left: 20px;
+}
+.contact-social i{  
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:  white;
+    padding-inline: 10px;
+    margin-left: 35px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid#212529;
+    background-color:#212529;
+}
+
+.contact-social i:hover{
+background-color:#149ddd;
+}
+
+/* Section contact Ends */
+
+/* Footer starts */
+
+.footer{
+    margin-left: 300px;
+    background-color: aliceblue;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.footer-content a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #149ddd;
+
+}
+
+/* Responsive */
+
+@media screen and (max-width:600px)
+{
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: normal;
+    }
+    .left-container{
+        display: block;
+        height: 1000px;
+        position: fixed;
+        background-color: rgb(5, 76, 88);
+    }
+}
+@media screen and (max-width:900px)
+{
+    body{
+      width: 100%;
+    }
+}
